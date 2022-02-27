@@ -1,0 +1,140 @@
+.TopInfoBar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WordWindow {
+    height: 10%;
+    background-color: black;
+    color: #c7c7c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+.GameControllers {
+    height: 30%;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    overflow: auto;
+}
+
+.GameControllersNewGame {
+    align-items: center;
+}
+
+.btn {
+    background-color: rebeccapurple;
+}
+
+.GameControllers .ctrlBtn {
+    width: 3.3rem;
+    height: 3rem;
+    padding: 0.25rem 1rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+    margin: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.GameControllers .ctrlBtn:hover {
+   background-color: rgb(65, 65, 65);
+   color: black;
+}
+
+.GameControllers .ctrBtnRed {
+    background-color: red;
+    color: white;
+}
+.GameControllers .ctrBtnGreen {
+    background-color: rgb(53, 212, 5);
+    color: black;
+}
+
+.info {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.infoName {
+   width: 100%;
+   height: 50%;
+   background-color: black;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1rem;
+}
+
+.infoValue {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.hangTower {
+    height: 100%;
+    width: 80%;
+    background-color: burlywood;
+    position: relative;
+}
+
+
+
+
+@media (max-height:900px) {
+    .GameControllers .ctrlBtn {
+        width: 3.35rem;
+        height: 3.25rem;
+        padding: 0.25rem 1rem;
+        font-size: 2rem;
+        margin: 0.35rem;
+        border-radius: 15px;
+    }
+}
+
+@media (max-height:800px) {
+    .GameControllers .ctrlBtn {
+        width: 3.5rem;
+        height: 3rem;
+        padding: 0.25rem 1rem;
+        font-size: 2rem;
+        border-radius: 15px;
+        margin: 0.25rem;
+    }
+}
+
+@media (max-height:700px) {
+    .GameControllers .ctrlBtn {
+        width: 3.5rem;
+        height: 3rem;
+        padding: 0.25rem 1rem;
+        font-size: 1.75rem;
+        border-radius: 15px;
+        margin: 0.25rem;
+    }
+}

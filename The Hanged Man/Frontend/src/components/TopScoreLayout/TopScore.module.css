@@ -1,0 +1,194 @@
+.TopScoreList {
+   width: 95%;
+   height: fit-content;
+   background-color: #2f2f2f;
+   margin: 2rem auto;
+   padding: 1rem;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+
+.info {
+   width: 100%;
+   height: 50px;
+   background-color: black;
+   color: #857b7b;
+   font-size: 2rem;
+   /* padding:0rem 1rem; */
+   /* border: 2px solid white; */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   box-sizing: border-box;
+}
+
+.info1 {
+   width: 100%;
+   height: 50px;
+   background-color: rgba(251, 255, 0, 0.788);
+   color: #000000;
+   font-size: 2rem;
+   font-weight: bold;
+}
+.info2 {
+   width: 100%;
+   height: 50px;
+   background-color: rgba(230, 230, 230, 0.788);
+   color: #000000;
+   font-size: 2rem;
+   font-weight: bold;
+}
+.info3 {
+   width: 100%;
+   height: 50px;
+   background-color: rgba(255, 166, 0, 0.849);
+   color: #000000;
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+.info .place {
+   width: 20%;
+   height: 100%;
+   border: 2px solid #857b7b;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+}
+.info .playerName {
+   width: 60%;
+   height: 100%;
+   border: 2px solid #857b7b;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   color: #0a8899;
+}
+
+.info1 .playerName,
+.info2 .playerName,
+.info3 .playerName {
+    color: #000000;
+}
+.info .typeValue {
+   width: 20%;
+   height: 100%;
+   border: 2px solid #857b7b;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+}
+
+.ListName {
+   width: 100%;
+   font-size: 2rem;
+   color: #9f9f9f;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem;
+   font-weight: bold;
+   box-sizing: border-box;
+}
+
+.Player {
+   width: 95%;
+   height: 100px;
+   background-color: rgb(0, 0, 0);  
+   color: #857b7b;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 1rem auto;
+   position: relative;
+   
+}
+
+.playerName {
+   width: 25%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 2rem;
+   font-weight: bold;
+   box-sizing: border-box;
+   border: 2px solid #857b7b;
+}
+
+.playerInfo {
+   width: 75%;
+   height: 100%;
+   /* background-color: rgb(255, 255, 255); */
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   font-size: 1.5rem;
+}
+
+.infoType {
+   height: 50%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.infoValue {
+   height: 50%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.infoBox {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid #857b7b;
+   box-sizing: border-box;
+}
+
+@media (max-width: 450px) {
+   .TopScoreList {
+      width: 95%;
+      margin: 1rem auto;
+      padding: 0.25rem;
+   }
+
+   .info {
+      font-size: 1rem;
+      height: 2rem;
+   }
+
+   .info .playerName {
+      font-size: 1rem;
+   }
+
+   .ListName {
+      font-size: 1.5rem;
+   }
+
+   .Player {
+      height: 75px;
+   }
+
+   .playerName {
+      font-size: 1rem;
+      text-align: center;
+   }
+
+   .playerInfo {
+      font-size: 1rem;
+   }
+
+   .infoBox {
+      border: 1px solid #857b7b;
+   }
+}

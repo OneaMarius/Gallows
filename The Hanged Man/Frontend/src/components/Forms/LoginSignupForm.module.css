@@ -1,0 +1,78 @@
+.FormCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.element {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0.25rem auto;
+}
+
+
+
+.element input {
+    width: 100%;
+    height: 2.5ch;
+    border-radius: 7px;
+    margin-top: 0.25rem ;
+    text-align: center;
+}
+
+
+
+.element button {
+    margin-top: 1rem;
+}
+
+@media (max-width:450px) {
+    
+    .form {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .element label {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .element input {
+        width: 100%;
+        height: 3ch;
+        border-radius: 7px;
+        margin-top: 0.25rem ;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .FormCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        
+    }
+
+
+}

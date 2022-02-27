@@ -1,0 +1,19 @@
+
+
+.AllLists {
+   width: 100%;
+   background-color: rgb(110, 110, 110);
+   padding: 1rem 0rem;
+   
+}
+
+.ScoreCard {
+   width: 100%;
+   height: calc(100% - 75px);
+
+   position: fixed;
+   top: 75px;
+   left: 0px;
+   border-radius: 0;
+   overflow: auto;
+}

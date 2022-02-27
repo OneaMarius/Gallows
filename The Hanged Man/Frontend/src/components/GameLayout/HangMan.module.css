@@ -1,0 +1,471 @@
+@keyframes anim1 {
+   0% {
+      transform: translateY(0px);
+   }
+   50% {
+    transform: translateY(25px) ;
+   }
+   100% {
+    transform: translateY(10px);
+   }
+}
+
+@keyframes animHead {
+    0% {
+       transform: translateY(0px);
+    }
+    50% {
+     transform: translateY(25px);
+    }
+    100% {
+     transform: translateY(10px);
+     background-color: red;
+    }
+ }
+
+@keyframes animL {
+    0% {
+       transform: translateY(0px);
+       transform: rotate(15deg);
+    }
+    50% {
+     transform: translateY(25px) rotate(75deg);
+     
+    }
+    100% {
+     transform: translateY(10px) rotate(15deg);
+     
+    }
+ }
+
+ @keyframes animR {
+    0% {
+       transform: translateY(0px);
+       transform: rotate(-15deg);
+    }
+    50% {
+     transform: translateY(25px) rotate(-75deg);
+    }
+    100% {
+     transform: translateY(10px) rotate(-15deg);
+
+    }
+ }
+
+ @keyframes animLleg {
+    0% {
+       transform: translateY(0px);
+       transform: rotate(-15deg);
+    }
+    50% {
+     transform: translateY(25px) rotate(45deg);
+     
+    }
+    100% {
+     transform: translateY(10px) rotate(15deg);
+     
+    }
+ }
+
+ @keyframes animRleg {
+    0% {
+       transform: translateY(0px);
+       transform: rotate(15deg);
+    }
+    50% {
+     transform: translateY(25px) rotate(-45deg);
+    }
+    100% {
+     transform: translateY(10px) rotate(-15deg);
+
+    }
+ }
+ @keyframes stainAnim1 {
+    0% {
+        top:0px;
+        left:50%;
+      background-color: black;
+    }
+    100% {
+     background-color: red;
+     top:15%;
+     left:35%;
+    }
+ }
+ @keyframes stainAnim2 {
+    0% {
+        top:0px;
+        left:50%;
+      background-color: black;
+    }
+    100% {
+     background-color: red;
+     top:35%;
+     left:55%;
+    }
+ }
+ @keyframes stainAnim3 {
+    0% {
+        top:0px;
+        left:50%;
+      background-color: black;
+    }
+    100% {
+     background-color: red;
+     top:55%;
+     left:35%;
+    }
+ }
+
+ @keyframes rulesBarAnim {
+   0% {
+       transform: translateX(500px);
+   }
+   100% {
+    transform: translateX(-100%);
+   }
+}
+
+
+.HangedMan {
+   height: 50%;
+   background-color: rgb(58, 58, 58);
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.HMerrors {
+   width: 50px;
+   height: 50px;
+   background-color: black;
+   color: white;
+   font-size: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 1;
+}
+
+.lettersBar {
+   width: fit-content;
+   height: 35px;
+   background-color: transparent;
+   color: white;
+   text-shadow: 2px 2px 2px black;
+   font-size: 1.5rem;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: space-evenly;
+   flex-wrap: nowrap;
+   white-space: nowrap;
+   
+   
+   animation-name: rulesBarAnim;
+   animation-duration: 40s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-fill-mode: forwards;
+}
+
+.lettersBar word {
+   color: rgb(255, 0, 34);
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.usedLetters {
+   width: 25px;
+   height: 25px;
+   color: rgb(255, 4, 4);
+   font-size: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   z-index: 1;
+}
+
+.hangBox {
+   height: 100%;
+   width: 100%;
+   background-color: rgb(80, 80, 80);
+   position: relative;
+}
+
+.armA {
+   width: 5%;
+   height: 95%;
+   position: absolute;
+   left: 5%;
+   bottom: 0;
+   background-color: brown;
+}
+.armB {
+   width: 46%;
+   height: 5%;
+   position: absolute;
+   left: 5%;
+   top: 5%;
+   background-color: brown;
+}
+
+.armC {
+   width: 25%;
+   height: 5%;
+   position: absolute;
+   left: 25%;
+   top: 5%;
+   background-color: brown;
+   transform: rotate(135deg);
+   transform-origin: left;
+}
+
+.armD {
+   width: 2%;
+   height: 10%;
+   position: absolute;
+   left: 49%;
+   top: 10%;
+   background-color: rgb(0, 0, 0);
+}
+
+.head {
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+   background-color: black;
+   border: 5px solid white;
+   position: absolute;
+   box-sizing: border-box;
+   top: 15%;
+   left: calc(49% - 30px);
+   position: relative;
+}
+
+/* .headEnd {
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+   background-color: rgb(255, 0, 0);
+   border: 5px solid white;
+   position: absolute;
+   box-sizing: border-box;
+   top: 15%;
+   left: calc(49% - 30px);
+   transform: rotate(-45deg);
+   transform-origin: bottom;
+} */
+
+.body {
+   height: 30%;
+   width: 14%;
+   /* border-radius: 50%; */
+   background-color: black;
+   border: 5px solid white;
+   position: absolute;
+   top: 27%;
+   left: 42%;
+   border-radius: 25%;
+}
+
+.handL {
+   height: 30%;
+   width: 4%;
+   /* border-radius: 50%; */
+   background-color: black;
+   border: 5px solid white;
+   position: absolute;
+   top: 27%;
+   left: 39%;
+   transform: rotate(15deg);
+   border-radius: 25px;
+   transform-origin: top;
+}
+
+.handR {
+   height: 30%;
+   width: 4%;
+   /* border-radius: 50%; */
+   background-color: black;
+   border: 5px solid white;
+   position: absolute;
+   top: 27%;
+   right: 39%;
+   transform: rotate(-15deg);
+   border-radius: 25px;
+   transform-origin: top;
+}
+
+.legL {
+   height: 30%;
+   width: 6%;
+   /* border-radius: 50%; */
+   background-color: black;
+   border: 5px solid white;
+   position: absolute;
+   top: 55%;
+   left: 42%;
+   transform: rotate(15deg);
+   border-radius: 25px;
+   transform-origin: top;
+}
+
+.legR {
+   height: 30%;
+   width: 6%;
+   /* border-radius: 50%; */
+   background-color: black;
+   border: 5px solid white;
+   position: absolute;
+   top: 55%;
+   right: 42%;
+   transform: rotate(-15deg);
+   border-radius: 25px;
+   transform-origin: top;
+}
+
+.hang {
+   animation-name: anim1;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+
+.hangR {
+    animation-name: animR;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+
+ .hangLleg {
+    animation-name: animLleg;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+
+ .hangRleg {
+    animation-name: animRleg;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+
+ .hangL {
+    animation-name: animL;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+
+ .hangHead {
+    animation-name: animHead;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+
+
+.stain1, .stain2, .stain3 {
+    width: 15px;
+    height: 25px;
+    background-color: red;
+    border-top-right-radius: 75%;
+    border-top-left-radius: 75%;
+    border-bottom-left-radius: 75%;
+    transform: rotateZ(210deg);
+
+}
+
+.stain1 {
+    position: absolute;
+    top:15%;
+    left:35%;
+    animation-name: stainAnim1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.stain2 {
+    position: absolute;
+    top:35%;
+    left:55%;
+    animation-name: stainAnim2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.stain3 {
+    position: absolute;
+    top:55%;
+    left:35%;
+    animation-name: stainAnim3;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.eye1 {
+   width: 1rem;
+   height: 1rem;
+   color: white;
+   /* font-weight: bold; */
+   font-size: 2rem;
+   position: absolute;
+   top:10px;
+   left:10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.eye2 {
+   width: 1rem;
+   height: 1rem;
+   color: white;
+   /* font-weight: bold; */
+   font-size: 2rem;
+   position: absolute;
+   top:10px;
+   right:10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.mouth {
+   width: 1rem;
+   height: 1rem;
+   color: white;
+   /* font-weight: bold; */
+   font-size: 2rem;
+   position: absolute;
+   top:40px;
+   left:25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: rotate(90deg);
+}

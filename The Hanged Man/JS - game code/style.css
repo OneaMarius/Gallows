@@ -1,0 +1,35 @@
+body {
+    background-color: #4f4f4f;
+}
+
+#show {
+    background-color: black;
+    color: white;
+    height: 200px;
+    width: 1000px;
+    margin: 100px auto;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2rem;
+}
+
+#inputLetter {
+    width: 200px;
+    height: 100px;
+    margin: 50px auto;
+    font-size: 4rem;
+
+
+}
+
+.form {
+    height: 200px;
+    width: 200px;
+    margin: 50px auto;
+    display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+}
